@@ -21,6 +21,9 @@
 		B30CC0001535FDC00068D05D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B30CBFFF1535FDC00068D05D /* second@2x.png */; };
 		B30CC0031535FDC00068D05D /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30CC0011535FDC00068D05D /* FirstViewController.xib */; };
 		B30CC0061535FDC00068D05D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30CC0041535FDC00068D05D /* SecondViewController.xib */; };
+		B30CC00E1536032C0068D05D /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B30CC00C1536032C0068D05D /* libGoogleAnalytics.a */; };
+		B30CC010153604220068D05D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30CC00F153604220068D05D /* CFNetwork.framework */; };
+		B30CC012153604330068D05D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B30CC011153604330068D05D /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,22 +31,26 @@
 		B30CBFE11535FDC00068D05D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B30CBFE31535FDC00068D05D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B30CBFE51535FDC00068D05D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B30CBFE91535FDC00068D05D /* ga-demo-Info.plist */ = {isa = PBXFileReference; path = "ga-demo-Info.plist"; sourceTree = "<group>"; };
+		B30CBFE91535FDC00068D05D /* ga-demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ga-demo-Info.plist"; sourceTree = "<group>"; };
 		B30CBFEB1535FDC00068D05D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B30CBFED1535FDC00068D05D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B30CBFEF1535FDC00068D05D /* ga-demo-Prefix.pch */ = {isa = PBXFileReference; path = "ga-demo-Prefix.pch"; sourceTree = "<group>"; };
-		B30CBFF01535FDC00068D05D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B30CBFEF1535FDC00068D05D /* ga-demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ga-demo-Prefix.pch"; sourceTree = "<group>"; };
+		B30CBFF01535FDC00068D05D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B30CBFF11535FDC00068D05D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B30CBFF31535FDC00068D05D /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		B30CBFF31535FDC00068D05D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		B30CBFF41535FDC00068D05D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B30CBFF61535FDC00068D05D /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		B30CBFF81535FDC00068D05D /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		B30CBFFA1535FDC00068D05D /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		B30CBFFA1535FDC00068D05D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B30CBFFB1535FDC00068D05D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B30CBFFD1535FDC00068D05D /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		B30CBFFF1535FDC00068D05D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B30CC0021535FDC00068D05D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		B30CC0051535FDC00068D05D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		B30CC00C1536032C0068D05D /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
+		B30CC00D1536032C0068D05D /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
+		B30CC00F153604220068D05D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B30CC011153604330068D05D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30CC012153604330068D05D /* libsqlite3.0.dylib in Frameworks */,
+				B30CC010153604220068D05D /* CFNetwork.framework in Frameworks */,
 				B30CBFE21535FDC00068D05D /* UIKit.framework in Frameworks */,
 				B30CBFE41535FDC00068D05D /* Foundation.framework in Frameworks */,
 				B30CBFE61535FDC00068D05D /* CoreGraphics.framework in Frameworks */,
+				B30CC00E1536032C0068D05D /* libGoogleAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,8 @@
 		B30CBFD21535FDC00068D05D = {
 			isa = PBXGroup;
 			children = (
+				B30CC011153604330068D05D /* libsqlite3.0.dylib */,
+				B30CC00F153604220068D05D /* CFNetwork.framework */,
 				B30CBFE71535FDC00068D05D /* ga-demo */,
 				B30CBFE01535FDC00068D05D /* Frameworks */,
 				B30CBFDE1535FDC00068D05D /* Products */,
@@ -90,6 +102,8 @@
 		B30CBFE71535FDC00068D05D /* ga-demo */ = {
 			isa = PBXGroup;
 			children = (
+				B30CC00C1536032C0068D05D /* libGoogleAnalytics.a */,
+				B30CC00D1536032C0068D05D /* GANTracker.h */,
 				B30CBFF01535FDC00068D05D /* AppDelegate.h */,
 				B30CBFF11535FDC00068D05D /* AppDelegate.m */,
 				B30CBFF31535FDC00068D05D /* FirstViewController.h */,
@@ -272,6 +286,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ga-demo/ga-demo-Prefix.pch";
 				INFOPLIST_FILE = "ga-demo/ga-demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ga-demo\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -283,6 +301,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ga-demo/ga-demo-Prefix.pch";
 				INFOPLIST_FILE = "ga-demo/ga-demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ga-demo\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

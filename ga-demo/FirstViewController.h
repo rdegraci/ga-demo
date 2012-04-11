@@ -10,4 +10,6 @@
 
 @interface FirstViewController : UIViewController
 
+- (IBAction)touchGenerateAnEvent:(id)sender;
+
 @end

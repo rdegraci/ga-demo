@@ -12,6 +12,11 @@
 
 #import "SecondViewController.h"
 
+#import "GANTracker.h"
+
+// Dispatch period in seconds
+static const NSInteger kGANDispatchPeriodSec = 10;
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -34,6 +39,14 @@
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
+    [[GANTracker sharedTracker] startTrackerWithAccountID:@"UA-30781854-1"
+                                           dispatchPeriod:kGANDispatchPeriodSec
+                                                 delegate:nil];
+    
+    [[GANTracker sharedTracker] setDebug:YES];
+    
+    
     return YES;
 }
 

@@ -8,6 +8,8 @@
 
 #import "FirstViewController.h"
 
+#import "GANTracker.h"
+
 @interface FirstViewController ()
 
 @end
@@ -30,6 +32,16 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    NSError* error;
+    if (![[GANTracker sharedTracker] trackPageview:@"/FirstViewController"
+                                         withError:&error]) {
+        NSLog(@"GANTracker FirstViewController page view Error!");
+    }
+    
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -41,4 +53,15 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)touchGenerateAnEvent:(id)sender {
+    
+    NSError* error;
+    if (![[GANTracker sharedTracker] trackEvent:@"Event Generated"
+                                         action:@"Event button pressed"
+                                          label:@"Generate Event"
+                                          value:-1
+                                      withError:&error]) {
+        NSLog(@"GANTracker Event Error!");
+    }
+}
 @end
